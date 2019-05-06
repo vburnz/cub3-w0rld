@@ -1,0 +1,249 @@
+.imperialism { 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border-radius: 25px; 
+  padding: 40px; 
+  margin-left: 100px; 
+  margin-right: 100px; 
+ 
+  
+}
+
+#grad1 {
+  background: red;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet, red);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet), red;
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet, red);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3vw;
+}
+
+#grad1:hover{ 
+  cursor: help;
+
+}
+
+.foundation { 
+  display: flex; 
+  flex-direction: column; 
+
+}
+
+.foundation-stuff{ 
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row;
+  justify-content: center;
+  color: #003;
+}
+
+.foundation-stuff .selected-p { 
+  background:  #f194d5;
+  box-shadow: 0px -2px 1px 3px hsla(272, 39%, 43%, 0.8);
+  color: #003; 
+}
+
+.foundation-stuff div:hover{ 
+  background:  #f194d5; 
+  box-shadow: 0px -2px 1px 3px #62f0d8b6;;
+  color: #62f0d8b6;; 
+  text-shadow: 3px #003;
+}
+.foundation-stuff div { 
+  margin: 20px; 
+  padding:15px; 
+  background: hsla(272, 39%, 43%, 0.8);
+  border: 6px double black;
+  box-shadow: 0px -2px 1px 3px  #f194d5;
+  width: 10%; 
+ 
+  word-wrap: break-word;
+  min-width: 130px;
+}
+
+.bellJar{ 
+  color: #003; 
+  background-color: hsla(271, 25%, 70%, 0.8);
+  line-height: 40px; 
+  padding-left: 20px; 
+  padding-right: 20px;
+  margin-top: 30px;
+  /* width: 80%;  */
+  text-align: justify; 
+  text-indent: 80%; 
+  border-radius: 10px; 
+  height: 60vh; 
+  overflow: auto;
+  border: 2px solid purple; 
+  box-shadow: -15px -15px 2px #7adfce;
+
+}
+
+.dont { 
+  background-color: hsla(329, 25%, 70%, 0.8);
+  /* padding: 30px;  */
+  padding-top: 30px; 
+  margin: 10px; 
+  border-radius: 20px; 
+  display: flex; 
+  justify-content: space-evenly; 
+  flex-direction: column; 
+  /* text-align: center; */
+  width: 80%
+}
+.dont p { 
+  display: flex; 
+  /* padding-left: 20px; */
+  /* padding-right: -10px; */
+  margin-left: 30px; 
+  margin-right: 30px; 
+  
+
+  justify-content: center; 
+  border-bottom: 1px dashed #003; 
+  
+  color: black; 
+  /* text-align: center */
+  /* justify-content: center;  
+  align-items: center;  */
+}
+
+.dont div { 
+  border-bottom: 2px solid black; 
+}
+
+.everything{ 
+  line-height: 25px; 
+  margin: 10px; 
+}
+.everything input { 
+  background-color: hsla(240, 25%, 70%, 0.8);
+  border: 2px solid #fff ;
+  box-shadow: 4px; 
+  border-radius: 5px; 
+  padding: 6px; 
+  color: #003; 
+  font-size: 16px; 
+  text-align: center; 
+  /* text-shadow: -1px -1px 0 #99c, 1px -1px 0 #99c, -1px 1px 0 #99c, 1px 1px 0 #99c; */
+}
+
+.quantum { 
+  display: flex; 
+  justify-content: center; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  margin-left: 60px; 
+
+}
+
+.quantum p { 
+  width: 25%;
+  margin: 20px; 
+  line-height: 34px; 
+  background-color: hsla(03, 38%, 33%, 0.4);
+  padding: 15px; 
+  border-radius: 20px; 
+  box-shadow: 1px 1px 3px 3px #99c; 
+  font-size: 20px;
+  
+}
+.subject:hover{ 
+  background-color: plum; 
+  padding: auto; 
+  color: black;
+  font-size: 30px; 
+  cursor: help;
+}
+
+.two-col {
+  display: flex; 
+  flex-direction: row; 
+}
+
+.col { 
+  width: 50%; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+}
+
+.node { 
+    background: #7adfce; 
+    border-radius: 25px; 
+    padding: 40px;
+    margin: 20px; 
+    width: 300px;
+    height: 150px; 
+    display: flex; 
+    box-shadow: 2px 5px 10px 5px #41796f;
+    flex-wrap: wrap; 
+}
+.subnode { 
+    background: #f194d5; 
+    border-radius: 50px; 
+    height: 15%; 
+    padding: 10px;
+    margin: 10px; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    font-size: 0.6em; 
+}
+
+.node-container{ 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+/* uhhh, yeah, I'm applying to a front-end position :<(? */
+
+/* probably need to be more clever --> but let's be real --< even if i am cleer, what does this mean for how successful i will be at this job? though, i guess i am ripe for learning more --> wherever i go i will be aiming to improve and learn 00< and good webdesign is not beyond my abilities!!!!! */
+/* it IS within my grasp!! I can LEARN!! I can get new skills, i can make new thingS!!! */
+
+
+/* OKAY SO -- we can't be making their product --> not within a wekk! */
+/* so, instead we are going to have some click-thrugh-able experience/narrative */
+/* and mayeb a summation of that with a d3 graph at the end (maybe) */
+
+ /* split screen -- read card with d3 graph above --> highlight */
