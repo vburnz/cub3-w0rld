@@ -54,7 +54,7 @@ class PatriarchyOne extends Component {
                         </div>
                         <p></p>
                         
-                                <p>rooted in and based upon the socially constructed "gender binary", a sub-division of individual (ihnerently spectral) homo sapiens into the "race of men" (made in His image 8===D), and the lesser-than biologically inferior "others"//"counterparts" </p>
+                                <p>rooted in and based upon the socially constructed "gender binary", a sub-division of individual homo sapiens into the "race of men" (made in His image), and the lesser-than biologically inferior "counterparts" to that race </p>
                             <div class="tooltip">
                                 <p id="grad1">Hover over me</p>
                                 <span class="tooltiptext">
@@ -76,8 +76,8 @@ class PatriarchyOne extends Component {
 
                     <div className="col">
                     {this.state.book === 'bellJar' ? (<BellJarExplainer />) : null}
-                        {/* {this.state.book === 'discipline' ? <DisciplineAndPunishExplainer/> : null}
-                        {this.state.book === 'sexNotOne' ? <TheSexWhichIsNotOneExplainer /> : null} */}
+                        {this.state.book === 'discipline' ? <DisciplineAndPunishExplainer/> : null}
+                        {this.state.book === 'sexNotOne' ? <TheSexWhichIsNotOneExplainer /> : null}
                     </div>
                 </div>
             </div>

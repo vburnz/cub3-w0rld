@@ -65,9 +65,9 @@ class Cube extends React.Component{
 
   arrowHandler(currFace){  
     this.setState({currFace});
-    setTimeout(()=>{
-      this.setState({cubeHidden: 'cube-hidden'})
-    }, 120000)
+    // setTimeout(()=>{
+    //   this.setState({cubeHidden: 'cube-hidden'})
+    // }, 120000)
   }
 
   eyeClickHandler(){
@@ -89,7 +89,6 @@ class Cube extends React.Component{
   
   
   render() {
-    console.log(this.state.selectTextDict); 
     return (
       <div className="App">
       {/* <button onClick={this.getCount}>BellJarTextGetCount</button> */}
@@ -98,7 +97,6 @@ class Cube extends React.Component{
       <div className="CAE">
       <CubeAndEye currFace={this.state.currFace} eyeClickHandler={this.eyeClickHandler} cubeHidden={this.state.cubeHidden} newFace={this.newFace}/>
       </div>
-      {console.log('node', this.state.node)}
       {this.state.node ? <p>{this.state.node.id}</p> : null}
      
       <div>
